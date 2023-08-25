@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs/IonSummer/v16
+/src/IonSummer/bin/Debug
+/src/IonSummer/obj/Debug
