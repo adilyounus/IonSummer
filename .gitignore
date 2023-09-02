@@ -5,3 +5,6 @@
 /src/.vs/IonSummer/v16
 /src/IonSummer/bin/Debug
 /src/IonSummer/obj/Debug
+/src/.vs
+/src/IonSummerCore/obj
+/src/IonSummerCore/bin/Debug/net7.0-windows
