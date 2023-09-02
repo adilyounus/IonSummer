@@ -1,0 +1,29 @@
+clear
+clc
+x=[1.25,2.50,5,10,20,30,40]'; %Dummy Data, fill in here
+y=[30151.89357,59543.53432,117599.5737,233857.5235,448633.0221,668863.0719,896864.0854]';  %Dummy Data, fill in here
+for i=1: length (x)
+    w(i)=1/(x(i)); % FORMULA FOR 1/X! Comment in line #8 if you want 1/X^2
+    %To calculate for 1/x^2 use the line below
+    %w(i)=1/(power(x(i),2));
+end
+
+D=[ones(length(x),1), x, power(x,2)]; %Design Matrix where first column is 1, then X then X^2
+D
+W=zeros(length(x),length(x)); %this plus the for loop below generates W= matrix you see when run.%
+for i=1:length(x)
+    for j=i:length(x)
+    if j==i
+        W(i,j)= w(i); 
+    else
+        W(i,j)= 0; 
+    end
+    end 
+end
+
+W
+A=D'*W*D; %D' is transposed of D then multiple by Weight and D matrix.%
+A 
+coefficients_weighted = inv(A)*(D'*W*y) %Final Result for co-efficients%
+
+fprintf('y=%fx^2+%fx+%f',coefficients_weighted(3),coefficients_weighted(2),coefficients_weighted(1))

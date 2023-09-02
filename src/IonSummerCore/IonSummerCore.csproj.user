@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="frmComponentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmCustomConcentrations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmDefaultPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmIonSummer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmPDFDefaultPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmReverseCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
